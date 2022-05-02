@@ -15,12 +15,12 @@ This EFI folder is based on the work from https://github.com/cstrouse/Dell-Power
 | Ethernet | Intel I219LM2 |
 | Audio | Realtek ALC899 |
 ## Edit config.plist
-Rename either `configAMD.plist`(Using AMD W5100) or `configIntel.plist`(Using Intel P530) to `config.plist` then your own generate serial number.
+Rename either `configAMD.plist`(Using AMD W5100) or `configIntel.plist`(Using Intel P530) to `config.plist` then generate your own serial number.
 ## BIOS Configuration
 Disable `TPM` and `Secure Boot`, set storage to `AHCI`. Keep default for other options.
 ## UEFI Modifications
 1. Boot into OpenCore menu, run `VerifyMsrE2`. It should say `This firmware has LOCKED MSR 0xE2 Register!`
-2. Exit and run modGRUBShell.efi. type the following commands: (I have validated these in v1.8.1 BIOS)
+2. Exit and run `modGRUBShell`. Type the following commands: (I have validated these in v1.8.1 BIOS)
 
 * Disable CFG Lock
 
@@ -39,8 +39,10 @@ Disable `TPM` and `Secure Boot`, set storage to `AHCI`. Keep default for other o
 ```setup_var 0x351 0x3```
 
 3. Shut down then turn on. run `VerifyMsrE2`. It should say `This firmware has UNLOCKED MSR 0xE2 Register!`
+
+For more details see https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell
 ## Sleep
-Disable sleep as HD530(P530) support is buggy.
+Disable sleep as HD530(P530) driver is buggy.
 ```
 sudo pmset -a standby 0
 sudo pmset -a autopoweroff 0
