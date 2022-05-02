@@ -6,7 +6,7 @@ This EFI folder is based on the work from https://github.com/cstrouse/Dell-Power
 | Part | Model |
 | --- | --- |
 | CPU | E3-1225 V5 3.30 GHz |
-| RAM | Corsair 2x8GB DDR4-2400 non-ECC |
+| RAM | Corsair 2x8GB non-ECC |
 | BIOS | 1.8.1 (No M.2) | 
 | SSD | Crucial MX200 SATA 500GB|
 | dGPU | AMD FirePro W5100 (4xDP) |
@@ -21,19 +21,20 @@ Disable `TPM` and `Secure Boot`, set storage to `AHCI`. Keep default for other o
 ## UEFI Modifications
 1. Boot into OpenCore menu, run `VerifyMsrE2`. It should say `This firmware has LOCKED MSR 0xE2 Register!`
 2. Exit and run modGRUBShell.efi. type the following commands: (I have validated these in v1.8.1 BIOS)
-Disable CFG Lock
+
+* Disable CFG Lock
 
 ```setup_var 0xAF 0x0```
 
-Enable Above 4GB MMIO BIOS Assignment
+* Enable Above 4GB MMIO BIOS Assignment
 
 ```setup_var 0x355 0x1```
 
-Set DVMT pre-alloc to 64MB
+* Set DVMT pre-alloc to 64MB
 
 ```setup_var 0x350 0x2```
 
-Set DVMT Total Gfx Memory to MAX
+* Set DVMT Total Gfx Memory to MAX
 
 ```setup_var 0x351 0x3```
 
