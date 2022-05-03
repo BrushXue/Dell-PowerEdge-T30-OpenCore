@@ -5,8 +5,8 @@ This EFI folder is based on the work from https://github.com/cstrouse/Dell-Power
 ## Hardware
 | Part | Model |
 | --- | --- |
-| CPU | E3-1225 V5 3.30 GHz |
-| RAM | Corsair 2x8GB non-ECC |
+| CPU | Intel E3-1225 V5 3.30 GHz |
+| RAM | NEMIX 2x16GB DDR4-2400 ECC|
 | BIOS | 1.8.1 (No M.2) | 
 | SSD | Crucial MX200 SATA 500GB|
 | dGPU | AMD FirePro W5100 (4xDP) |
