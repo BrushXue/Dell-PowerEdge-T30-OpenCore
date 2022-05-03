@@ -4,17 +4,17 @@ This EFI folder is based on the work from https://github.com/cstrouse/Dell-Power
 
 
 ## Hardware
-| Part | Model |
-| --- | --- |
+| Part | Model | Remark |
+| --- | --- | --- |
 | CPU | Intel E3-1225 V5 3.30 GHz |
-| RAM | NEMIX 2x16GB DDR4-2400 ECC|
-| BIOS | 1.8.1 (No M.2) | 
-| SSD | Crucial MX200 SATA 500GB|
-| dGPU | AMD FirePro W5100 (4xDP) |
-| iGPU | Intel P530 |
-| Wireless | Fenvi T919 |
+| RAM | NEMIX 2x16GB DDR4-2400 ECC| Running at 2133 |
+| BIOS | 1.8.1 | M.2 is disabled |
+| SSD | Crucial MX200 SATA 500GB |
+| dGPU | AMD FirePro W5100 (4xDP) | FakeID 0x665C1002 |
+| iGPU | Intel P530 | Headless mode |
+| Wireless | Fenvi T919 | Connect internal USB 2.0|
 | Ethernet | Intel I219LM2 |
-| Audio | Realtek ALC899 |
+| Audio | Realtek ALC899 | layout-id 3 |
 ## Edit config.plist
 Rename either `configAMD.plist`(Using AMD W5100) or `configIntel.plist`(Using Intel P530) to `config.plist` then generate your own serial number.
 ## BIOS Configuration
