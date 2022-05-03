@@ -52,4 +52,4 @@ sudo mkdir /var/vm/sleepimage
 sudo pmset -a powernap 0
 ```
 ## USB Mapping
-The original USB Mapping is totally broken for some reason. I made my `USBPorts.kext` by disabling two front USB 2.0 ports. If you want to create your own, you need to install macOS 11.2.3 or below and create you own USB mapping.
+The original [USB Mapping](https://github.com/cstrouse/Dell-PowerEdge-T30-Hackintosh/tree/master/EFI_OC/OC/Kexts/USBPorts.kext) is totally broken for some reason. I made my `USBPorts.kext` by disabling two front USB 2.0 ports. If you want to reclaim two front USB ports, you need to install macOS 11.2.3 or below and create you own USB mapping.
