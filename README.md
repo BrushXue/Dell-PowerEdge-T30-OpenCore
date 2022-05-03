@@ -1,6 +1,7 @@
 # Dell PowerEdge T30 Hackintosh for macOS 12
 This EFI folder is based on the work from https://github.com/cstrouse/Dell-PowerEdge-T30-Hackintosh
-![Screen Shot 2022-05-02 at 4 45 42 PM](https://user-images.githubusercontent.com/12702149/166324904-8633ae5f-df20-44ad-96f1-4f53eae4813a.png)
+![Screen Shot 2022-05-03 at 2 14 02 PM](https://user-images.githubusercontent.com/12702149/166516515-b5a68a80-486b-4677-b8e5-c36d241b421d.png)
+
 
 ## Hardware
 | Part | Model |
