@@ -12,7 +12,7 @@ This EFI folder is based on the work from https://github.com/cstrouse/Dell-Power
 | SSD | Crucial MX200 SATA 500GB |
 | dGPU | AMD FirePro W5100 (4xDP) | FakeID 0x665C1002 |
 | iGPU | Intel P530 | Headless mode |
-| Wireless | Fenvi T919 | Connect internal USB 2.0|
+| Wireless | Fenvi T919 (BCM94360CD) | Internal USB 2.0 for BT |
 | Ethernet | Intel I219LM2 |
 | Audio | Realtek ALC899 | layout-id 3 |
 ## Edit config.plist
